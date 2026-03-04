@@ -286,7 +286,53 @@ CITIES_DICT = {
     "张掖(YZY)": "yzy",
     "扎兰屯(NZL)": "nzl",
     "昭苏(ZFL)": "zfl",
-    "怀化（芷江）(HJJ)": "hjj"
+    "怀化（芷江）(HJJ)": "hjj",
+    # ===== 国际城市（40个）=====
+    # 亚洲（15个）
+    "东京(NRT)": "nrt",
+    "大阪(KIX)": "kix",
+    "首尔(ICN)": "icn",
+    "曼谷(BKK)": "bkk",
+    "新加坡(SIN)": "sin",
+    "吉隆坡(KUL)": "kul",
+    "巴厘岛(DPS)": "dps",
+    "普吉岛(HKT)": "hkt",
+    "河内(HAN)": "han",
+    "迪拜(DXB)": "dxb",
+    "伊斯坦布尔(IST)": "ist",
+    "加德满都(KTM)": "ktm",
+    "马尔代夫(MLE)": "mle",
+    "苏梅岛(USM)": "usm",
+    "清迈(CNX)": "cnx",
+    # 欧洲（10个）
+    "伦敦(LHR)": "lhr",
+    "巴黎(CDG)": "cdg",
+    "法兰克福(FRA)": "fra",
+    "阿姆斯特丹(AMS)": "ams",
+    "罗马(FCO)": "fco",
+    "马德里(MAD)": "mad",
+    "巴塞罗那(BCN)": "bcn",
+    "苏黎世(ZRH)": "zrh",
+    "维也纳(VIE)": "vie",
+    "莫斯科(SVO)": "svo",
+    # 美洲（8个）
+    "纽约(JFK)": "jfk",
+    "洛杉矶(LAX)": "lax",
+    "旧金山(SFO)": "sfo",
+    "芝加哥(ORD)": "ord",
+    "西雅图(SEA)": "sea",
+    "多伦多(YYZ)": "yyz",
+    "温哥华(YVR)": "yvr",
+    "墨西哥城(MEX)": "mex",
+    # 大洋洲（5个）
+    "悉尼(SYD)": "syd",
+    "墨尔本(MEL)": "mel",
+    "布里斯班(BNE)": "bne",
+    "奥克兰(AKL)": "akl",
+    "斐济(NAN)": "nan",
+    # 非洲（2个）
+    "开罗(CAI)": "cai",
+    "约翰内斯堡(JNB)": "jnb"
 }
 
 # 反向映射字典：机场代码(小写) -> 完整城市名
