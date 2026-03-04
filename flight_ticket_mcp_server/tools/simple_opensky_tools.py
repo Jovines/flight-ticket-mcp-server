@@ -84,13 +84,22 @@ class SimpleOpenSkyTracker:
         """解析OpenSky API响应数据"""
         try:
             if not data or 'states' not in data or data['states'] is None:
+                # 提供更有用的提示信息
+                current_hour = datetime.now().hour
+                time_hint = ""
+                if 0 <= current_hour <= 6:
+                    time_hint = "（当前为凌晨时段，航班较少）"
+                elif 22 <= current_hour <= 23:
+                    time_hint = "（当前为夜间时段，航班较少）"
+                
                 return {
                     "status": "success",
-                    "message": "当前无航班数据",
+                    "message": f"当前查询区域内无实时航班数据{time_hint}",
                     "flights": [],
                     "flight_count": 0,
                     "bbox": bbox,
-                    "query_time": datetime.now().isoformat()
+                    "query_time": datetime.now().isoformat(),
+                    "note": "OpenSky仅提供实时飞行数据，建议：1) 扩大查询区域 2) 稍后重试 3) 查询白天时段"
                 }
             
             flights = []
